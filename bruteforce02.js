@@ -4,7 +4,7 @@ let res = abc.split("")
 
 function quebrar(senha) {
   
-    let key = senha.split("")
+  let key = senha.split("")
 	let tamanho = key.length
 	var arrkey = []
 	console.log(`Sua senha tem ${tamanho} caracteres`)
