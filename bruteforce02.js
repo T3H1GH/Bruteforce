@@ -4,7 +4,7 @@ let caracteres = abc.split("")     // Transforma os caracteres em array
 
 function quebrar(senha) {     // Aqui começa a mágica!
   
-  let key = senha.split("")    // Transfome a senha em arry
+  	let key = senha.split("")    // Transfome a senha em arry
 	let tamanho = key.length     // Essa é a quantidade de caracteres da senha
 	var arrkey = []              // Vamos armazenar os caracteres encontrados com o bruteforce aqui
 	console.log(`Sua senha tem ${tamanho} caracteres`)
