@@ -1,27 +1,28 @@
-let chave = "cupixo"
+let chave = "paralelepipedo"
 let abc = "aeioubcdfghjklmnpqrstvwxyz"
 let res = abc.split("")
 
 function quebrar(senha) {
   
-  let key = senha.split("")
-	var arrkey = []
-	for (s in key) {
-	  
-	  
-	}
-	
+    let key = senha.split("")
 	let tamanho = key.length
-	if (tamanho >= 1) {
-		for (c in res) {
+	var arrkey = []
+	console.log(`Sua senha tem ${tamanho} caracteres`)
+	for (s in key) {
+	  let cont = Number(s) + 1
+	  for (c in res) {
 			console.log(res[c])
-			if (res[c] == key[0]) {
+			if (res[c] == key[s]) {
 				arrkey.push(res[c])
-				console.log(`Primeiro caractere --> ${l1}`)
-				if (tamanho == 1) {
-					console.log(`Encontrado!\nSua sehha é ${l1}`)
-				}
+				console.log(`caractere ${cont} encontrado --> ${arrkey[s]}`)
 				break
 			}
 		}
+	  
+        if (cont == tamanho) {
+	        console.log(`Encontrado!\nSua sehha é ${arrkey.join('')}`)
+		}
 	}
+    return arrkey.join('')
+}
+console.log(quebrar(chave))
