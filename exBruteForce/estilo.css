@@ -1,6 +1,7 @@
 body {
     background: rgb(84, 135, 212);
     font: normal 15pt arial;
+    align-items: center;
 }
 
 header {
@@ -12,9 +13,14 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
-    margin: auto;
+    width: auto;
+    margin: 40px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    align-items: center;
+}
+
+div#div01 {
+    margin-left: 15px;
 }
 
 footer {
