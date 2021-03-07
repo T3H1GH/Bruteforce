@@ -1,6 +1,7 @@
 body {
     background: rgb(6, 31, 68);
     font: normal 15pt arial;
+    align-items: center;
 }
 
 header {
