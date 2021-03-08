@@ -41,10 +41,10 @@ function clicar() {
         }
     
     
-        for (s in key) {            
+        for (let s in key) {            
             let cont = Number(s) + 1  
             
-            for (c in caracteres) {   
+            for (let c in caracteres) {   
                 criarOption(1, caracteres[c])  
 
                 if (caracteres[c] == key[s]) { 
@@ -58,7 +58,7 @@ function clicar() {
                             arrkey.push(undefined)
                         }
                     }
-                    break         
+                    break;
                 }
             }
             
