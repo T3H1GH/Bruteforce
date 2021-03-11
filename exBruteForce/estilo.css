@@ -14,7 +14,6 @@ section {
     background: rgb(12, 77, 88);
     border-radius: 10px;
     padding: 15px;
-    min-width: 210px;
     width: auto;
     max-width: 500px;
     min-width: 250px;
@@ -28,11 +27,14 @@ div#d01 {
     margin-left: 15px;
 }
 
+p {
+    text-align: center;
+}
+
 select {
     background-color: rgb(12, 77, 88);
     width: 215px;
-    margin-left: 15px;
-    margin-top: 20px;
+    margin: 5px;
     color: rgb(82, 15, 15);
 }
 

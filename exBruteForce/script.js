@@ -15,15 +15,16 @@ function clicar() {
         let tamanho = key.length
         var arrkey = []
     
-        
+        let p = document.createElement('p')
         let select01 = document.createElement('select')
         let select02 = document.createElement('select')
         
         select01.size = 10
         select02.size = 10
     
-        res.appendChild(select01)
-        res.appendChild(select02)
+        res.appendChild(p)
+        p.appendChild(select01)
+        p.appendChild(select02)
     
      
         criarOption(1, "Caracteres encontrados:")
@@ -41,16 +42,14 @@ function clicar() {
         }
     
     
-        for (s in key) {            
+        for (let s in key) {            
             let cont = Number(s) + 1  
             
-            for (c in caracteres) {   
+            for (let c in caracteres) {   
                 criarOption(1, caracteres[c])  
 
                 if (caracteres[c] == key[s]) { 
-                    arrkey.push(caracteres[c])   
-                    criarOption(2, `${arrkey[s]}`)  
-                    criarOption(1, `Caractere ${cont} encontrado --> ${arrkey[s]}`)   
+                    arrkey.push(caracteres[c])
                     if (caracteres.length == Number(c) + 1) {
                         if (caracteres[c] == ' ') {
                         } else {
@@ -58,6 +57,8 @@ function clicar() {
                             arrkey.push(undefined)
                         }
                     }
+                    criarOption(2, `${arrkey[s]}`)  
+                    criarOption(1, `Caractere ${cont} encontrado --> ${arrkey[s]}`)   
                     break         
                 }
             }
