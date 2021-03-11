@@ -59,7 +59,7 @@ function clicar() {
                     }
                     criarOption(2, `${arrkey[s]}`)  
                     criarOption(1, `Caractere ${cont} encontrado --> ${arrkey[s]}`)   
-                    break         
+                    break
                 }
             }
             
